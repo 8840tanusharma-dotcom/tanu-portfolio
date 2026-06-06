@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanu Sharma | Developer & AI Enthusiast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ───────── NAV ───────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">TS<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#certifications" class="mob-link">Certs</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ───────── HERO ───────── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for Internships
+      </div>
+
+      <h1 class="hero-name reveal">
+        Hi, I'm <span class="gradient-text">Tanu Sharma</span>
+      </h1>
+
+      <div class="hero-typing reveal">
+        <span class="typing-prefix">I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero-tagline reveal">
+        B.Tech CSE Student &mdash; Crafting intelligent solutions at the intersection of <em>AI, Security &amp; Software</em>.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          Let's Connect <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/" target="_blank" class="social-pill">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="social-pill">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat-card glass">
+        <span class="stat-num">8.91</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+      <div class="stat-card glass">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-card glass">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Certs</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───────── ABOUT ───────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="avatar-wrap glass">
+            <img src="tanu.png" alt="Tanu Sharma" class="profile-img">
+          </div>
+          <div class="about-tags">
+            <span class="tag">🤖 AI Enthusiast</span>
+            <span class="tag">🔒 Cyber Security</span>
+            <span class="tag">💻 Software Dev</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2>Passionate about building <span class="gradient-text">impactful tech</span></h2>
+          <p>I'm a Computer Science & Engineering student with a strong foundation in software development, artificial intelligence, and cybersecurity. With a CGPA of <strong>8.91</strong>, I combine academic excellence with hands-on project experience.</p>
+          <p>I love turning complex problems into elegant, efficient solutions. Whether it's designing secure systems, developing intelligent applications, or building intuitive web experiences — I bring curiosity and precision to every project.</p>
+          <p>Currently seeking internship opportunities where I can contribute, grow, and make a real-world impact.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">
+            <i class="fas fa-paper-plane"></i> Hire Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── SKILLS ───────── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title reveal">Technical <span class="gradient-text">Expertise</span></h2>
+      <p class="section-sub reveal">Technologies and tools I work with</p>
+
+      <div class="skills-grid reveal">
+
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <span>Languages</span>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-java skill-icon java"></i>
+              <span>Java</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-python skill-icon python"></i>
+              <span>Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js skill-icon js"></i>
+              <span>Cyber Security</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe"></i>
+            <span>Web</span>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-html5 skill-icon html"></i>
+              <span>HTML5</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt skill-icon css"></i>
+              <span>CSS3</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-python skill-icon python"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:50%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <span>Tools & Concepts</span>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-github skill-icon github"></i>
+              <span>GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-sitemap skill-icon dsa"></i>
+              <span>Data Structures</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-sitemap skill-icon dsa"></i>
+              <span>Claude AI</span>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:78%"></div></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-header">
+            <i class="fas fa-brain"></i>
+            <span>Interests</span>
+          </div>
+          <div class="interest-chips">
+            <span class="chip">Artificial Intelligence</span>
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Data Structure</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Algorithms</span>
+            <span class="chip">Open Source</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── PROJECTS ───────── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub reveal">Things I've built with passion and purpose</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal" data-index="1">
+          <div class="project-number">01</div>
+          <div class="project-icon-wrap">
+            <i class="fas fa-cloud-sun-rain project-icon"></i>
+          </div>
+          <h3>Weather App</h3>
+          <p>A responsive weather application that fetches real-time weather data using a public API, displaying temperature, humidity, wind speed, and 5-day forecasts with beautiful UI.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/8840tanusharma-dotcom/Weather-Website"
+       target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com"  target="_blank" class="proj-link proj-demo"><i class="fab fa-github"></i>Live</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal" data-index="2">
+          <div class="project-number">02</div>
+          <div class="project-icon-wrap">
+            <i class="fas fa-list-check project-icon"></i>
+          </div>
+          <h3>To-Do List App</h3>
+          <p>A feature-rich task management app with local storage persistence, priority tagging, drag-and-drop reordering, and smooth animated task completion.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/8840tanusharma-dotcom/To-Do-List"
+       target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com" class="proj-link proj-demo"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal" data-index="3">
+          <div class="project-number">03</div>
+          <div class="project-icon-wrap">
+            <i class="fas fa-user-astronaut project-icon"></i>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p>A modern, responsive developer portfolio with glassmorphism effects, smooth animations, dark theme, and optimized performance for recruiter-friendly presentation.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/8840tanusharma-dotcom/Myportfolio" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com" class="proj-link proj-demo"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── CERTIFICATIONS ───────── -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label">04 — Certifications</div>
+      <h2 class="section-title reveal">My <span class="gradient-text">Certifications</span></h2>
+      <p class="section-sub reveal">Credentials that validate my skills</p>
+
+      <div class="cert-grid reveal">
+
+        <div class="cert-card glass">
+          <div class="cert-badge">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Basics of Data Structures &amp; Algorithms</h3>
+            <p class="cert-issuer">Professional Certification</p>
+            <p class="cert-desc">Fundamental knowledge of arrays, linked lists, trees, graphs, sorting, and searching algorithms.</p>
+          </div>
+          <div class="cert-ribbon">Verified</div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-badge aws">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div class="cert-info">
+            <h3>AWS Solutions Architecture Job Simulation</h3>
+            <p class="cert-issuer">Amazon Web Services</p>
+            <p class="cert-desc">Hands-on simulation covering cloud architecture, scalability, and AWS services for enterprise-grade solutions.</p>
+          </div>
+          <div class="cert-ribbon">AWS</div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-badge campus">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="cert-info">
+            <h3>Campus Ambassador Certificate</h3>
+            <p class="cert-issuer">Leadership Program</p>
+            <p class="cert-desc">Recognized for leadership, community building, and representing the organization on campus.</p>
+          </div>
+          <div class="cert-ribbon">Leader</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── EDUCATION ───────── -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">05 — Education</div>
+      <h2 class="section-title reveal">Academic <span class="gradient-text">Journey</span></h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-year">2024 – Present</div>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="timeline-inst">Maharana Pratap Engineering College(Affiliated by AKTU University)</p>
+            <div class="timeline-highlight">
+              <i class="fas fa-trophy"></i> CGPA: <strong>8.91</strong>
+            </div>
+            <p>Focused on algorithms, software engineering, AI, and cybersecurity. Active in coding clubs and tech events.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-year">2023 – 2024</div>
+            <h3>Senior Secondary (12th) — Science</h3>
+            <p class="timeline-inst">KBMA International School, Shivrajpur Kanpur Nagar</p>
+            <p>Physics, Chemistry, Mathematics &amp; Computer Science stream with strong academic performance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── CONTACT ───────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-sub reveal">I'm actively looking for internship/job opportunities. Let's talk!</p>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <div class="contact-item glass">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">8840tanusharma@email.com</span>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">India</span>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <span class="contact-label">Status</span>
+              <span class="contact-val">Open to Internships</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" class="social-btn github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="social-btn linkedin-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass" id="contactForm">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Internship Opportunity" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Hi Tanu, I'd love to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">TS<span class="dot">.</span></div>
+      <p class="footer-copy">Designed &amp; Built with <span class="heart">♥</span> by <strong>Tanu Sharma</strong></p>
+      <p class="footer-sub">B.Tech CSE &mdash; AI · Security · Software Development</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
